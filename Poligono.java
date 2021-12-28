@@ -64,6 +64,12 @@ public class Poligono {
 
     private double calculaArea(){
         List<Punto> temp = quitaRepetidos();
+        
+        /*for(int i = 0; i < temp.size(); ++i){
+            System.out.println(temp.get(i).toString());
+        }*/
+
+
         double suma = 0;
         int s = 0;
         int l = temp.size();
@@ -113,6 +119,8 @@ public class Poligono {
         }
         return false;
     }
+
+
     public static void main(String[] args){
         List<Punto> listaPunto = new ArrayList<>();
         listaPunto.add(new Punto(0,0));
@@ -124,7 +132,7 @@ public class Poligono {
         listaPunto.add(new Punto(3,3));
         listaPunto.add(new Punto(3,0));
 
-        listaPunto.add(new Punto(0,3));
+        listaPunto.add(new Punto(3,0));
         listaPunto.add(new Punto(0,0));
 
 
